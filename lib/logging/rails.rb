@@ -1,10 +1,6 @@
 require 'logging'
 require 'rails' if !defined? Rails or Rails.version
 
-if Rails.version < '3'
-  abort("The Logging Railtie only works with Rails 3 or higher - you are running Rails #{Rails.version}")
-end
-
 module Logging::Rails
 
   # :stopdoc:
